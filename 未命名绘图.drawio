@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-08T08:28:35.355Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="kRVgmN_nyC73tfEvbcLI" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-08T09:05:33.932Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="uJDB5mqmJ6v5HuOJYgP4" version="14.5.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -99,7 +99,7 @@
         <mxCell id="jc_c2QOUTIhvgZNtEA-S-30" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;台车出库完成&lt;br&gt;并锁定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="495" y="410" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="H59xqW2fEbd1HvJWyuM3-0" value="&lt;font style=&quot;font-size: 16px&quot;&gt;当PLC第一次入库请求发送结束后,台车根据自身状态判断,是否允许请求,&lt;br&gt;如果允许,则把请求代码及运行代码发送给plc,下次plc发送的时候,应该发送不请求代码,并开始运行,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;此时后续wms不发送指令,只接收指令,直到接收到台车停止的指令后,台车自检,根据行车位置,以及车上的板材,&lt;br&gt;下发运行指令,往复循环直到台车上没有板材时,台车停止,&lt;br&gt;等待出库指令发出时,台车自检,并回传出库指令,到达指定位置时候,停止即可.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="H59xqW2fEbd1HvJWyuM3-0" value="&lt;font style=&quot;font-size: 16px&quot;&gt;当PLC&lt;font color=&quot;#67ab9f&quot;&gt;第一次&lt;/font&gt;入库请求发送结束后,台车根据自身状态判断,是否允许请求,&lt;br&gt;如果&lt;font color=&quot;#67ab9f&quot;&gt;允许&lt;/font&gt;,则把请求代码及运行代码发送给plc,下次plc发送的时候,应该发送不请求代码,并开始运行,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;此时后续wms不发送指令,只接收指令,直到接收到台车停止的指令后,台车自检,根据行车位置,以及车上的板材,&lt;br&gt;下发运行指令,&lt;font color=&quot;#67ab9f&quot;&gt;往复循环&lt;/font&gt;直到台车上没有板材时,台车停止,&lt;br&gt;等待出库指令发出时,台车自检,并回传出库指令,到达指定位置时候,停止即可&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="40" y="610" width="1060" height="120" as="geometry" />
         </mxCell>
       </root>
